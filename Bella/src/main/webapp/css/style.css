@@ -1,0 +1,525 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bg-primary-color {
+  background-color: #fff;
+}
+
+.bg-secondary-color {
+  background-color: #ece8e2;
+}
+
+.bg-dark-color {
+  background-color: #050505;
+}
+
+.primary-color {
+  color: #050505;
+}
+
+.secondary-color {
+  color: #7a7a7a;
+}
+
+/* NAVBAR */
+
+/* borda inferior  */
+#navbar {
+  border-bottom: 1px solid #7a7a7a;
+  
+}
+
+#navbar a {
+  color: #050505;
+}
+
+/* altra cor ao passer em cima  */
+#navbar a:hover {
+  color: #7a7a7a;
+}
+
+#navbar .active {
+  border-bottom: 1px solid #050505;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+/* largura img logo */
+.navbar-brand img {
+  width: 40px;
+}
+
+.navbar-brand span {
+  font-weight: 500;
+  font-size: 1.5em;
+  margin-left: 0.5em;
+}
+
+/* disposição do itens menu  */
+#navbar-items .navbar-nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#navbar-items .nav-item {
+  margin: 0 1em;
+}
+
+/* SLIDER */
+#slider {
+  /* para afastar da barra ne navegação  */
+  margin-top: 8em;
+  /* para afastar do conteudo inferior   */
+  margin-bottom: 1em;
+}
+
+/* para subir a legenda  */
+#slider .carousel-caption {
+  bottom: 3em;
+}
+
+#slider .carousel-caption h5 {
+  font-size: 2.5em;
+  text-shadow: #000 2px 2px;
+}
+
+.btn {
+  /* de todos os botões do site  */
+  border-radius: 1;
+}
+
+#slider .btn {
+  padding: 0.3em 0.8em;
+  font-size: 1em;
+  margin-top: 1em;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  opacity: 0.7;
+}
+
+/* icone slide  */
+.carousel-control-prev i,
+.carousel-control-next i {
+  color: #111;
+  font-size: 3em;
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: #222;
+  opacity: 0.8;
+}
+
+/*para intensificar a cor do indicador ativo  */
+.carousel-indicators .active {
+  background-color: #000;
+}
+
+/* ajuste para descktop - tablet para cima  */
+@media (min-width: 768px) {
+
+  /* mantive o botão em baixo para não prejudicar a imagem/ mas teste altearar a pripiedade para 15em centraliza o botão  */
+  #slider .carousel-caption {
+    bottom: 15em;
+  }
+
+  #slider .carousel-caption h5 {
+    font-size: 3.5em;
+    text-shadow: #000 2px 3px;
+  }
+
+  #slider .btn {
+    padding: 0.6em 1.6em;
+    font-size: 1.2em;
+    margin-top: 1em;
+  }
+
+  .carousel-indicators {
+    bottom: 7em;
+  }
+}
+
+/* MINI BANNERS ANTIGO  */
+#mini-banners {
+  margin-bottom: 4em;
+}
+
+#mini-banners .card {
+  padding: 2em 0.3em;
+  border-radius: 0;
+  /* altura fixa doas banners  */
+  height: 400px;
+}
+
+#mini-banners i {
+  font-size: 4em;
+}
+/* borda titulo  */
+#mini-banners .card-title {
+  margin-bottom: 1.5em;
+}
+
+#mini-banners .btn {
+  margin-top: 1.5em;
+  padding: 0.6em 1.2em;
+  /* rever  */
+  background-color: #943939;
+  border: none;
+}
+
+#mini-banners .card {
+  margin-bottom: 1em;
+}
+
+/* ajuste para descktop  */
+@media (min-width: 768px) {
+  /* para sobrepor o mini banner no slide  */
+  #mini-banners {
+    margin-top: -6em;
+  }
+}
+
+/* NOVO MINI CARD  */
+.pricing-area {
+	padding: 3% 0;
+	text-align: center;
+}
+.single-pricing {
+	background: #fcfcfc;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	transition: all .5s ease;
+}
+.deal-type {
+	background: linear-gradient(to right, rgb(226, 199, 153), rgb(192, 130, 97));
+	padding: 15px 0;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+	color: #fff;
+}
+.deal-amount {
+	clip-path: ellipse(0 0, 100% 0%, 100% 60%, 51% 100%, 0 60%);
+	background: linear-gradient(to right, rgb(226, 199, 153), rgb(192, 130, 97));
+	padding: 10px 0;
+	color: #fff;
+}
+.price .money {
+	font-size: 60px;
+	font-weight: 900;
+}
+.price .money sup {
+	font-size: 40px;
+	font-weight: 500;
+}
+.single-deal {
+	padding: 15px 0;
+	list-style: none;
+}
+.single-deal li {
+	font-size: 18px;
+	font-family: montserrat;
+	padding: 10px 0;
+}
+.btn {
+	background: linear-gradient(to right, rgb(226, 199, 153), rgb(192, 130, 97));
+	border: none;
+	font-weight: 900;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	padding: 10px 50px;
+	color: #fff;
+}
+.single-pricing:hover {
+	transform: scale(1.05);
+}
+@media (max-width: 767px) {
+	.single-pricing {
+		margin-bottom: 30px;
+	}
+}
+
+
+
+/* DESTAQUES */
+#featured-container {
+  /* espaçamento para a proxma sessão  */
+  margin-bottom: 4em;
+}
+
+.title {
+  font-size: 1.75em;
+  margin-bottom: 0.4em;
+  position: relative;
+}
+/* elemento superior ao titulo */
+.title:before {
+  width: 75px;
+  border-top: 4px solid #7a7a7a;
+  content: '';
+  position: absolute;
+  bottom: 2em;
+}
+
+#featured-images {
+  margin-top: 2em;
+}
+
+#featured-images .col-md-4 {
+  position: relative;
+  cursor: pointer;
+}
+
+#featured-images .col-md-4:hover > .banner-content {
+  opacity: 0.8;
+}
+/* posicionamento do texto*/
+#featured-images .banner-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* para posicionar uma abaixo do outro  */
+  flex-direction: column;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+/* ajuste para descktop  */
+@media (min-width: 768px) {
+  .title {
+    font-size: 2.4em;
+  }
+
+  .title:before {
+    bottom: 1.5em;
+  }
+
+  #featured-images .banner-content {
+    opacity: 0;
+  }
+}
+
+/* INFO */
+#info-content {
+/* para distanciar do footer */
+  margin-bottom: 4em;
+  padding: 4em 1em;
+}
+
+#info-numbers {
+  margin: 1.5em 0;
+}
+/* para alinha a img lateralmnete centralizada */
+#info-banner {
+  align-items: center;
+  display: flex;
+  margin-bottom: 2.5em;
+}
+
+/* para demonstrativos de valor  */
+/* #info-numbers h3 {
+  font-size: 3em;
+} */
+
+
+/* ajuste para descktop  */
+@media (min-width: 768px) {
+  #info-content {
+    padding: 3.5em;
+  }
+}
+
+
+/* FOOTER TOP */
+#footer {
+  padding: 3em 2em;
+}
+
+#footer-top {
+  margin-bottom: 2em;
+}
+
+#footer-top,
+#footer-top i {
+  color: #fff;
+}
+
+#social-icons {
+  text-align: right;
+}
+
+#social-icons i {
+  /* espaçamento entre */
+  margin-right: 1em;
+  /* tamanho */
+  font-size: 1.5em;
+  cursor: pointer;
+}
+/* anterar cor ao passer por cima  */
+#social-icons i:hover {
+  color: #7a7a7a;
+}
+
+
+/* FOOTER DETAILS */
+#footer-details {
+  margin-bottom: 3em;
+}
+/* alinhamento para mobile  */
+#news-container,
+#contact-container,
+#links-container {
+  padding: 0;
+  border: 0;
+  margin-bottom: 2em;
+}
+
+#footer-details h4 {
+  color: #fff;
+  margin-bottom: 1.5em;
+}
+
+#news-container input {
+  border-radius: 0;
+  border: none;
+}
+/* para afastar os links */
+#links-container li {
+  margin-bottom: 0.5em;
+}
+
+#links-container a {
+  text-decoration: none;
+}
+/* anterar cor ao passer por cima  */
+#links-container a:hover {
+  color: #fff;
+}
+
+/* FOOTER BOTTOM */
+
+/* borda superior */
+#footer-bottom {
+  border-top: 1px solid #7a7a7a;
+  padding-top: 2em;
+}
+
+#footer-bottom i {
+  color: #e61e10;
+}
+/* ajuste para descktop  */
+@media (min-width: 768px) {
+  #news-container {
+    padding-right: 2em;
+  }
+/* divisão entre as seções*/
+  #contact-container {
+    padding: 0 2em;
+    border-left: 1px solid #7a7a7a;
+    border-right: 1px solid #7a7a7a;
+  }
+
+  #links-container {
+    padding-left: 2em;
+  }
+}
+
+/* CONTATOS TEXT */
+.how-section1{
+  margin-top:-8%;
+  padding: 10%;
+  
+}
+.how-section1 h4{
+  color: #174580;
+  font-weight: bold;
+  font-size: 30px;
+}
+.how-section1 p{
+  text-align: justify;
+}
+.how-section1 .subheading{
+  color: #3931af;
+  font-size: 20px;
+}
+.how-section1 .row
+{
+  margin-top: 10%;
+}
+.how-img 
+{
+  text-align: center;
+  border-radius: 4px;
+}
+.how-img img{
+  width: 400PX;
+  height: 500PX;
+  border-radius: 4px;
+}
+
+/* CARDS INFORME */
+.mb-60 {
+  margin-bottom: 50px;
+}
+.services-inner {
+  border: 2px solid #48c7ec;
+  margin-left: 35px;
+  transition: .3s;
+}
+.our-services-img {
+  float: left;
+  margin-left: -36px;
+  margin-right: 22px;
+  margin-top: 28px;
+}
+.our-services-text {
+  padding-right: 10px;
+}
+.our-services-text {
+  overflow: hidden;
+  padding: 28px 0 25px;
+}
+.our-services-text h4 {
+  color: #222222;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+  padding-bottom: 10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.our-services-text h4::before {
+  background: #ec6d48 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  position: absolute;
+  width: 35px;
+}
+.our-services-wrapper:hover .services-inner {
+  background: #fff none repeat scroll 0 0;
+  border: 2px solid transparent;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+}
+.our-services-text p {
+  margin-bottom: 0;
+}
+p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #666;
+  margin-bottom: 15px;
+}
